@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼퓸그라피 홈페이지</title>
+    <link rel="icon" href="./images/favicon.svg">
+    <!-- 폰트 어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- 리셋 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!-- 베이스 -->
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <!-- 메인 -->
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <!-- 스와이퍼슬라이드 -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+
+    <!-- 벤더프리픽스 -->
+    <script src="./script/prefixfree.min.js"></script>
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 스크롤 탑버튼 애니메이션 스크립트 소스 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+    <!-- 스크롤 동작에 따른 애니메이션 스크립트 소스 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <!-- 메인스크립트 -->
+    <script src="./script/main.js" defer></script>
+
+</head>
+<body>
+    <!-- 헤더영역 -->
+    <header>
+        <div class="h_inner">
+        <h1><a href="index.html">
+            <img src="./images/logo.svg" alt="상단로고">
+        </a></h1>
+        <div class="h_inner_top">
+            <nav class="lnb">
+                <div class="search">
+                    <input type="search" placeholder="검색어를 입력해주세요." id="search">
+                    <label for="search">
+                        <span class="fas fa-search"></span>
+                    </label>
+                </div>
+                <ul class="t_lnb">
+                    <li>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <ul class="sub">
+                            <li><a href="#" title="장바구니">장바구니</a></li>
+                            <li><a href="#" title="주문조회">주문조회</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <i class="fas fa-user"></i>
+                        <ul class="sub">
+                            <li><a href="login.html" title="로그인">로그인</a></li>
+                            <li><a href="#" title="회원가입">회원가입</a></li>
+                            <li><a href="#" title="마이페이지">마이페이지</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+            <nav class="gnb">
+                <ul>
+                    <li><a href="brand_story.html" title="브랜드 스토리로 바로가기">perfumegraphy</a>
+                        <div class="item_content">
+                            <div class="nav_wrap">
+                    <dl class="sub none">
+                        <dt><a href="brand_story.html" title="브랜드스토리">brand story</a></dt>
+                        <dd>&nbsp;</dd></dl>
+                        <dl class="sub none">
+                        <dt><a href="#" title="회사소개">회사소개</a></dt>
+                        <dd>&nbsp;</dd></dl>
+                        <dl class="sub none">
+                        <dt><a href="#" title="오시는길">오시는길</a></dt>
+                        <dd>&nbsp;</dd></dl>
+                    
+                </div>
+                </li>
+                <li><a href="unisex.html" title="프로덕트">product</a>
+                    <div class="item_content">
+                        <div class="nav_wrap">
+                        <dl class="sub">
+                            <dt><a href="unisex.html" title="unisex">unisex</a></dt>
+                            <dd><a href="unisex.html" title="all">all</a></dd>
+                            <dd><a href="unisex_strus.html" title="시트러스">시트러스 &#x007C; 그린</a></dd>
+                            <dd><a href="unisex_wudy.html" title="우디">우디 &#x007C; 베티버</a></dd>
+                            <dd><a href="unisex_.html" title="샌달우드">샌달우드 &#x007C; 머스크</a></dd>
+                            <dd><a href="unisex_.html" title="스파이시">스파이시 &#x007C; 통카빈</a></dd>
+                        </dl>
+                        <dl class="sub">
+                            <dt><a href="forher.html" title="">for her</a></dt>
+                            <dd><a href="forher.html" title="">all</a></dd>
+                            <dd><a href="forher_strus.html" title="">시트러스 &#x007C; 그린</a></dd>
+                            <dd><a href="forher_flower.html" title="">플로럴 &#x007C; 화이트 플로럴</a></dd>
+                            <dd><a href="forher_musk.html" title="">머스크 &#x007C; 엠버</a></dd>
+                            <dd><a href="forher_swet.html" title="">스위트 &#x007C; 바닐라</a></dd>
+                        </dl>
+                        <dl class="sub">
+                            <dt><a href="#" title="for him">for him</a></dt>
+                            <dd><a href="#" title="all">all</a></dd>
+                            <dd><a href="#" title="시트러스/그린">시트러스 &#x007C; 그린</a></dd>
+                            <dd><a href="#" title="우디/베티버">우디 &#x007C; 베티버</a></dd>
+                            <dd><a href="#" title="윕스파이시/통키번">윕스파이시 &#x007C; 통키번</a></dd>
+                            <dd><a href="#" title="라벤더/워터리">라벤더 &#x007C; 워터리</a></dd>
+                        </dl>
+                        <dl class="sub">
+                            <dt><a href="#" title="바디/디퓨저">바디&#x0026;디퓨저</a></dt>
+                            <dd><a href="#" title="핸드/바디/솝">핸드&#x0026;바디&#x0026;솝</a></dd>
+                            <dd><a href="#" title="디퓨저/캔들">디퓨저&#x0026;캔들</a></dd>
+                        </dl>
+                        <dl class="sub">
+                            <dt><a href="#" title="브랜드별">브랜드별</a></dt>
+                        </dl>
+                    </div>
+                        </div>
+                </li>
+                <li><a href="event.html">event</a>
+                    <div class="item_content">
+                        <div class="nav_wrap">
+                   <dl class="sub">
+                    <dt><a href="#" title="10월 신상">10월 신상</a></dt>
+                   </dl>
+                   <dl class="sub">
+                    <dt><a href="#" title="큐레이션">큐레이션</a></dt>
+                    <dd><a href="#" title="7월향수">7월 - 청량한 향수</a></dd>
+                    <dd><a href="#" title="8월향수">8월 - 정원의 향수</a></dd>
+                   </dl>
+                   <dl class="sub">
+                    <dt><a href="#" title="best 50">best 50</a></dt>
+                    <dd><a href="#" title="세르주루텐">세르주루텐</a></dd>
+                    <dd><a href="#" title="아쿠아 디 파르마">아쿠아 디 파르마</a></dd>
+                   </dl>
+                   </div>
+                   </div>
+                </li>
+                <li><a href="community.html" title="community">community</a>
+                    <div class="item_content">
+                        <div class="nav_wrap">
+                    <dl class="sub none">
+                        <dt><a href="#" title="Q&#x0026;A">Q&#x0026;A</a></dt>
+                        <dd>&nbsp;</dd></dl>
+                        <dl class="sub none">
+                        <dt><a href="#" title="향수추천문의">향수추천문의</a></dt>
+                        <dd>&nbsp;</dd></dl>
+                        <dl class="sub none">
+                        <dt><a href="#" title="고객리뷰">고객리뷰</a></dt>
+                        <dd>&nbsp;</dd></dl>
+                    
+                    </div>
+                    </div>
+                </li>
+                <li><a href="#" title="센츠하다">센츠하다</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </header>
+
+    <!-- 메인영역 -->
+    <main>
+        <!-- 비주얼 슬라이드 -->
+        <section class="v_slide">
+            <h3>비주얼 슬라이드</h3>
+            <div class="inner">
+                <div class="txt_box">
+                    <h3>
+                        Special
+                        <br> Exhibition</h3>
+                    <p>Acqua Di Parma<br>
+                        &<br>
+                        Seage Lutens</p>
+                        <a href="#" title="기획전 바로가기" class="btn">
+                    기획전 보러가기</a>
+                </div>
+                <div class="item01 fadein">
+                    <h3>아쿠아 디 파르마<br>
+                        미르토 디 파나레아 <br>
+                        오 드 뚜왈렛 <span class="fas fa-angle-right"></span></h3>
+                    <img src="./images/slide_item01.png" alt="아쿠아 디 파르마 미르토">
+                </div>
+                    
+                <div class="item02 fadein">
+                    <h3></span>세르주루텐 상탈<br>
+                        마제스퀼 오 드 퍼퓸 <span class="fas fa-angle-right"></span></h3>
+                    <img src="./images/slide_item02.png" alt="세르주루텐 상탈 마제스퀼">
+                </div>
+
+                <div class="item03 fadein">
+                    <span class="fas fa-angle-up"></span>
+                    <h3>세르주루텐 로 프로이드<br>
+                          오 드 퍼퓸</h3>
+                    <img src="./images/slide_item03.png" alt="세르주텐 로 프로이드">
+                </div>
+            </div>  
+        </section>
+
+        <!-- 오늘의 향수 -->
+        <section class="promotion">
+            <h2>오늘의 향수</h2>
+            <div class="swiper proSlide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/today01.jpg" alt="아이젠버그 르페쉬에 옴므">
+                    <h3>아이젠버그 르페쉬에 옴므</h3>
+                    <p>혼자 잘생기고, 섹시하고 다 할 정도로<br>
+                        완급조절을 잘 하는 남자의 담백한 앰버 향기</p>
+                    <p class="num">71,100원</p>
+                    <a href="javascript:void(0)" title="제품으로 바로가기" class="btn">자세히보기</a>
+                </div>
+
+                  <div class="swiper-slide">
+                    <img src="./images/today02.jpg" alt="샤넬 No.5 (넘버5) 오 드 퍼퓸">
+                    <h3>샤넬 No.5 (넘버5) 오 드 퍼퓸</h3>
+                    <p>그녀의 향기에는 이유가 있다.코코샤넬의 페르소나.<br>
+                        샤넬 넘버5</p>
+                    <p class="num">220,000원</p>
+                    <a href="javascript:void(0)" title="제품으로 바로가기" class="btn">자세히보기
+                    </a></div>
+
+                  <div class="swiper-slide">
+                    <img src="./images/today03.jpg" alt="세르주루텐 상탈 마제스퀼 오 드 퍼퓸">
+                    <h3>세르주루텐 상탈 마제스퀼 오 드 퍼퓸</h3>
+                    <p>샌달 우드의 숨겨진 마스터피스 <br>샌달나무의 하얀속살을 인센스 향기가 <br>감싸안는 신비로움</p>
+                    <p class="num">174,500원</p>
+                    <a href="javascript:void(0)" title="제품으로 바로가기" class="btn">자세히보기
+                    </a></div>
+
+                  <div class="swiper-slide">
+                    <img src="./images/today04.jpg" alt="프레데릭 말 엉빠썽">
+                    <h3>프레데릭 말 엉빠썽</h3>
+                    <p>맑은 이슬을 머금은 라일락 생화 꽃 향기</p>
+                    <p class="num">224,500원</p>
+                    <a href="javascript:void(0)" title="제품으로 바로가기" class="btn">자세히보기
+                    </a></div>
+
+                  <div class="swiper-slide">
+                    <img src="./images/today05.jpg" alt="톰포드 네롤리 포르토피노 오 드 퍼퓸">
+                    <h3>톰포드 네롤리 포르토피노 오 드 퍼퓸</h3>
+                    <p>계곡물 위에 풍덩 빠질 때, 부서져 흩어지는 <br> 베르가못의 청량한 향기</p>
+                    <p class="num">279,000원
+                    </p>
+                    <a href="javascript:void(0)" title="제품으로 바로가기" class="btn">자세히보기
+                    </a></div>
+
+                  <div class="swiper-slide">
+                    <img src="./images/today06.jpg" alt="조말론 우드 세이지 앤 씨솔트 코롱">
+                    <h3>조말론 우드 세이지 앤 씨솔트 코롱</h3>
+                    <p>허브나무의 잔잔한 담백함이 모던하게 퍼지는 편안한 향기</p>
+                    <p class="num">87,800원</p>
+                    <a href="javascript:void(0)" title="제품으로 바로가기" class="btn">자세히보기
+                    </a></div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                    <span class="fas fa-angle-left"></span>
+                </div>
+                <div class="swiper-button-next">
+                    <span class="fas fa-angle-right"></span>
+                </div>
+              </div>
+        </section>
+
+        <!-- 향수추천 -->
+        <section class="perfume scroll-spy">
+            <h3>향수추천문의</h3>
+            <div class="inner">
+                <img src="./images/perfume.jpg" alt="향수" class="back-to-position">
+                <h3 class="back-to-position to-left delay-1">당신은 만족스러운 향수를<br>
+                    쓰시고 계시나요?</h3>
+                <p class="back-to-position to-left delay-2">현대 사회에서 향수란 나의 정체성을 의미합니다<br>
+                    나에게 맞는 향수를 찾아가는 것은 나의 정체성을<br>
+                    찾아가는 과정이기도 합니다.</p>
+                    <div class="btn_box back-to-position to-left delay-3">
+                <a href="#" title="브랜드별 제품" class="btn">브랜드별 제품</a>
+                <a href="#" title="베스트 제품" class="btn">베스트 제품</a>
+                <a href="#" title="향수추천 문의" class="btn">향수추천 문의</a>
+            </div>
+            </div>
+        </section>
+
+        <!-- 제품 -->
+        <section class="product">
+            <h3>제품</h3>
+            <article class="inner">
+                <div class="p_btn_box">
+                <span class="p_btn new_btn on_btn">신제품</span>
+                <span class="p_btn best_btn">베스트</span>
+                <span class="p_btn brand_btn">브랜드별</span>
+                <span class="p_btn sench_btn">센츠하다</span>
+            </div>
+            <article class="p_new on">
+            <div class="p_bg">
+                <img src="./images/new00.jpg" alt="신제품배경">
+                <p>퍼퓸그라피는 항상 고객님들께<br>
+                    새로운 향수를 선물하고자 노력합니다.</p>
+            </div>
+            <div class="p01 img_box">
+                <img src="./images/new01.jpg" alt=">크리드 네롤리 소바쥬">
+                <a href="#" title="제품으로 이동하기">
+                    <div class="txt_box">
+                        <h3>크리드 네롤리 소바쥬</h3>
+                        <p>프랑스 정원의 네롤리 산책로를 따라 은은하게 <br>
+                            퍼지는 앰버의 귀족적인 향기</p>
+                        <p class="num">310,000원 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="p02 img_box">
+                <img src="./images/new02.jpg" alt="겔랑 아쿠아 알레고리아 네타레 디 솔">
+                <div class="txt_box">
+                    <a href="#" title="제품으로 이동하기">
+                    <h3>겔랑 아쿠아 알레고리아 
+                        <br>네타레 디 솔</h3>
+                    <p>햇살을 머금은 청량한 꽃들이 선사하는
+                        <br> 달콤한 허니 노트</p>
+                    <p class="num">118,000원</p>
+                    <span class="btn02">해외</span>
+                </div>
+            </a>
+            </div>
+            <div class="p03 img_box">
+                <img src="./images/new03.jpg" alt="아이젠버그 디아볼리끄 옴므">
+                <div class="txt_box">
+                    <a href="#" title="제품으로 이동하기">
+                    <h3>아이젠버그 디아볼리끄 옴므</h3>
+                    <p>나쁜 게 확실한데, 도저히 미워할래야 
+                        <br>미워할 수 없는 매력</p>
+                    <p class="num">71,100원</p>
+                </div>
+            </a>
+            </div>
+            <div class="p04 img_box">
+                <img src="./images/new04.jpg" alt="아이젠버그 러브어페어 우먼">
+                <a href="#" title="제품으로 이동하기">
+                    <div class="txt_box">
+                        <h3>아이젠버그 러브어페어 우먼</h3>
+                        <p>정말 편한 나시, 가디건 차림에서 풍기는 
+                            <br>살 내음이 더 여자로 느껴질 때</p>
+                        <p class="num">71,100원</p>
+                    </div>
+                </a>
+            </div>
+        </article>
+
+            <article class="p_best">
+            <div class="p_bg">
+                <img src="./images/best00.jpg" alt="베스트배경">
+                <p>퍼퓸그라피는 항상 고객님들께<br>
+                    최상의 향수를 선물하고자 노력합니다.</p>
+            </div>
+            <div class="p01 img_box">
+                <img src="./images/best01.jpg" alt="베스트01">
+                <a href="#" title="제품으로 이동하기">
+                    <div class="txt_box">
+                        <h3>프레데릭 말 포트레이트 오브 어 레이디 오 드 퍼퓸</h3>
+                        <p>비에 젖은 라즈베리와 짙은 색의 장미가 쌉싸름
+                            <br>하고 우디한 파츌리와 어울린, 고혹적 분위기</p>
+                        <p class="num">280,000원</p>
+                    </div>
+                </a>
+            </div>
+            <div class="p02 img_box">
+                <img src="./images/best02.jpg" alt="베스트02">
+                <a href="#" title="제품으로 이동하기">
+                    <div class="txt_box">
+                        <h3>메종마르지엘라 재즈클럽</h3>
+                        <p>분위기 좋은 바에서 콕테일 한잔을 마시며 
+                            <br>취해가는 럭셔리 향기</p>
+                        <p class="num">151,000원
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="p03 img_box">
+                <img src="./images/best03.jpg" alt="베스트03">
+                <a href="#" title="제품으로 이동하기">
+                <div class="txt_box">
+                    <h3>디올 옴므 코롱</h3>
+                    <p>포카리 스웨트처럼 청량하고 깔끔한 
+                        <br>공용 향수</p>
+                    <p class="num">102,500원</p>
+                </div>
+            </a>
+            </div>
+            <div class="p04 img_box">
+                <img src="./images/best04.jpg" alt="베스트04">
+                <a href="#" title="제품으로 이동하기">
+                    <div class="txt_box">
+                        <h3>산타마리아노벨라 엔젤 디 
+                            <br>피렌체 오 드 코롱</h3>
+                        <p>상큼달콤한 복숭아와 재스민이 어울린 
+                            <br>비누계열의 시트러스 향취</p>
+                        <p class="num">103,000원</p>
+                    </div>
+                </a>
+            </div>
+            </article>
+
+            <article class="p_brand">
+            <div class="p_bg">
+                <img src="./images/brand00.jpg" alt="브랜드배경">
+                <p>퍼퓸그라피는 항상 고객님들께 다양한<br>
+                    브랜드의 향수를 선물하고자 노력합니다.</p>
+            </div>
+            <div class="p01 img_box">
+                <img src="./images/brand01.jpg" alt="브랜드01">
+                <a href="#" title="제품으로 이동하기">
+                    <div class="txt_box">
+                        <h3>불가리 맨 인 블랙 오 드 퍼퓸</h3>
+                        <p>모던 클래식의 정석, 관능미 넘치는 남성 향수</p>
+                        <p class="num">114,000원</p>
+                    </div>
+                </a>
+            </div>
+            <div class="p02 img_box">
+                <img src="./images/brand02.jpg" alt="브랜드02">
+                <a href="#" title="제품으로 이동하기">
+                    <div class="txt_box">
+                        <h3>키에린 뉴욕 샹탈 스카이 오 <br>
+                            드 퍼퓸 스프레이</h3>
+                        <p>샌달우드와 베티버가 선사하는, 자유로운 
+                            <br>뉴요커의 하루 한 조각</p>
+                        <p class="num">54,000원</p>
+                        <span class="btn02">해외</span>
+                    </div>
+                </a>
+            </div>
+            <div class="p03 img_box">
+                <img src="./images/brand03.jpg" alt="브랜드03">
+                <a href="#" title="제품으로 이동하기">
+                    <div class="txt_box">
+                        <h3>샤넬 No.5 (넘버5) 오 드 퍼퓸</h3>
+                        <p>그녀의 향기에는 이유가 있다. 코코 샤넬의 
+                            <br>페르소나, 샤넬 넘버5</p>
+                        <p class="num">220,000원</p>
+                    </div>
+                </a>
+            </div>
+            <div class="p04 img_box">
+                <a href="#" title="제품으로 이동하기">
+                    <img src="./images/brand04.jpg" alt="브랜드03">
+                    <div class="txt_box">
+                        <h3>반클리프 앤 아펠 네롤리 <br>아마라 오 드 퍼퓸</h3>
+                        <p>티 없는 가을 하늘의 청량한 달콤함이 나리는, <br>네롤리와 잔잔한 우디가 선사하는 산뜻함</p>
+                        <p class="num">182,000원</p>
+                    </div>
+                </a>
+            </div>
+            </article>
+
+            <article class="p_sench">
+            <div class="p_bg">
+                <img src="./images/scents00.jpg" alt="센츠배경">
+                <p>당신의 다음 향수를 찾고 있다면,  <br>온라인 시향 서비스 센츠하다</p>
+            </div>
+            <div class="p01 img_box">
+                <img src="./images/scents.jpg" alt="센츠하다01">
+                <a href="#" title="제품으로 이동하기">
+                    <div class="txt_box">
+                        <h3>[5+1] 센츠!(Scent's) 하다 (feat.향수추천)</h3>
+                        <p>What is your next perfume? Here is [ ].<br>당신의 다음 향수를 찾고 있다면,
+                            <br> 온라인 시향 서비스 센츠하다.</p>
+                        <p class="num">25,000원</p>
+                    </div>
+                </a>
+            </div>
+            <div class="p02 img_box">
+                <img src="./images/scents.jpg" alt="센츠하다02">
+                <a href="#" title="제품으로 이동하기">
+                    <div class="txt_box">
+                        <h3>[3+1] 센츠!(Scent's) 하다 (feat.향수추천)</h3>
+                        <p>What is your next perfume? Here is [ ]. 당신의 다음 향수를 찾고 있다면, 온라인 시향 서비스 센츠하다.</p>
+                        <p class="num">18,000원</p>
+                    </div>
+                </a>
+            </div>
+            <div class="p03 img_box">
+                <img src="./images/scents.jpg" alt="센츠하다03">
+                <a href="#" title="제품으로 이동하기">
+                    <div class="txt_box">
+                        <h3>[2+0] 센츠!(Scent's) 하다</h3>
+                        <p>What is your next perfume? Here is [ ].
+                        <br> 당신의 다음 향수를 찾고 있다면,
+                        <br> 온라인 시향 서비스 센츠하다.</p>
+                        <p class="num">10,000원</p>
+                    </div>
+                </a>
+            </div>
+            <div class="p04 img_box">
+                <img src="./images/scents.jpg" alt="센츠하다03">
+                <a href="#" title="제품으로 이동하기">
+                    <div class="txt_box">
+                        <h3>센츠!(Scent's) 하다</h3>
+                        <p>What is your next perfume? Here is [ ].
+                        <br> 당신의 다음 향수를 찾고 있다면,
+                        <br> 온라인 시향 서비스 센츠하다.</p>
+                        <p class="num">5,000원</p>
+                    </div>
+                </a>
+            </div>
+            </article>
+
+        </section>
+
+        <!-- 큐레이션 -->
+        <section class="quretion scroll-spy">
+            <div class="inner">
+                <img src="./images/quretion.png" alt="아이젠버그" class="back-to-position to-right">
+                <div class="back-to-position to-left delay-1">
+                <p class="q_title">Perfumegraphy MD Pick</p>
+                <h3>큐레이션</h3>
+                <p>갑자기 추워진 계절<br>
+                    퍼퓸그라피가 제안하는 큐레이션을 만나보세요</p>
+                    </div>
+                    <div class="back-to-position to-left delay-2">
+                <a href="#" title="큐레이션으로 바로가기" class="btn">더보기</a>
+            </div>
+            </div>
+        </section>
+
+        <!-- 베스트 제품 -->
+        <section class="best">
+            <h3>best</h3>
+            <div class="inner">
+                <h3>best</h3>
+            <ul class="best_mnu">
+                <li class="b_unisex on_btn">Unisex</li>
+                <li class="b_forher">For Her</li>
+                <li class="b_forhim">For Him</li>
+                <li class="b_body">바디&#x0026;디퓨저</li>
+            </ul>
+            <a href="#" title="더보기" class="plus">더보기<i class="fas fa-angle-right"></i></a>
+            <div class="best_box unisex on">
+                <ul>
+                    <li>
+                        <div class="img_box img01">
+                            <a href="#" title="샤보 루비에르 드 베니스 오 드 퍼퓸 보러가기">
+                        <img src="./images/b_unisex01.jpg" alt="샤보 루비에르 드 베니스 오 드 퍼퓸">
+                        <img src="./images/b_unisex01_next.jpg" alt="샤보 루비에르 드 베니스 오 드 퍼퓸 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="샤보 루비에르 드 베니스 오 드 퍼퓸 보러가기">
+                            <h3>샤보 루비에르 드 베니스
+                                <br> 오 드 퍼퓸</h3>
+                        </a>
+                        <p>톤 다운된 메이크업이 잘 어울리는 <br>시크하고 달콤한 우디향취</p>
+                        <p>117,500원</p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="img_box img02">
+                            <a href="#" title="돌체앤가바나 라이트블루 오 인텐스 보러가기">
+                        <img src="./images/b_unisex02.jpg" alt="돌체앤가바나 라이트블루 오 인텐스">
+                        <img src="./images/b_unisex02_next.jpg" alt="돌체앤가바나 라이트블루 오 인텐스 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="돌체앤가바나 라이트블루 오 인텐스 보러가기">
+                            <h3>돌체앤가바나 라이트블루 오 인텐스</h3>
+                        </a>
+                        <p>기존의 돌체 라이트블루를 능가하는
+                            <br> 완성된 상큼함</p>
+                        <p>53,000원</p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="img_box img03">
+                            <a href="#" title="메종마르지엘라 바이 더 파이어플레이스 보러가기">
+                        <img src="./images/b_unisex03.jpg" alt="메종마르지엘라 바이 더 파이어플레이스">
+                        <img src="./images/b_unisex03_next.jpg" alt="메종마르지엘라 바이 더 파이어플레이스 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="메종마르지엘라 바이 더 파이어플레이스 보러가기">
+                            <h3>메종마르지엘라 바이 더 <br>파이어플레이스</h3>
+                        </a>
+                        <p>스위스 나무 별장, 모닥불 피워 놓은 <br>자리에서 한 입 떠 먹는 바닐라 한 스푼</p>
+                        <p>87,800원</p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="img_box img04">
+                            <a href="#" title="샤넬 레조 드 파리 도빌 오 드 뚜왈렛 보러가기">
+                        <img src="./images/b_unisex04.jpg" alt="샤넬 레조 드 파리 도빌 오 드 뚜왈렛">
+                        <img src="./images/b_unisex04_next.jpg" alt="샤넬 레조 드 파리 도빌 오 드 뚜왈렛 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="샤넬 레조 드 파리 도빌 오 드 뚜왈렛 보러가기">
+                            <h3>샤넬 레조 드 파리 도빌 오 드 뚜왈렛</h3>
+                        </a>
+                        <p>올여름, 가장 청량한 잔디에서
+                            <br> 쉬는 듯한 편안함</p>
+                        <p>124,000원</p>
+                        <span class="btn02">해외</span>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div class="best_box forher">
+                <ul>
+                    <li>
+                        <div class="img_box img01">
+                            <a href="#" title="스테파니 브루진 파리몽타뉴 오 드 퍼퓸 보러가기">
+                        <img src="./images/b_forher01.jpg" alt="스테파니 브루진 파리몽타뉴 오 드 퍼퓸">
+                        <img src="./images/b_forher01_next.jpg" alt="스테파니 브루진 파리몽타뉴 오 드 퍼퓸 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="스테파니 브루진 파리몽타뉴 오 드 퍼퓸 보러가기">
+                            <h3>스테파니 브루진 파리몽타뉴 오 드 퍼퓸</h3>
+                        </a>
+                        <p>입가에 고인 보랏빛 와인이, 지그시 감겨진 눈꺼풀이 따라올 수 없게 만드는 독보적인 분위기</p>
+                        <p>225,000원
+                        </p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="img_box img02">
+                            <a href="#" title="샤보 이노센트 프라질리테 오 드 퍼퓸 보러라기">
+                        <img src="./images/b_forher02.jpg" alt="샤보 이노센트 프라질리테 오 드 퍼퓸">
+                        <img src="./images/b_forher02_next.jpg" alt="샤보 이노센트 프라질리테 오 드 퍼퓸 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="샤보 이노센트 프라질리테 오 드 퍼퓸 보러가기">
+                            <h3>샤보 이노센트 프라질리테 오 드 퍼퓸</h3>
+                        </a>
+                        <p>꽃비누로 깨끗히 씻은 후, 수건만 가볍게 
+                            <br>두르고 나온 듯한 순수+관능미</p>
+                        <p>117,500원</p>
+                        <span class="btn02">해외</span>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="img_box img03">
+                            <a href="#" title="나소마토 실버 머스크 엑스트레 퍼퓸 보러가기">
+                        <img src="./images/b_forher03.jpg" alt="나소마토 실버 머스크 엑스트레 퍼퓸">
+                        <img src="./images/b_forher03_next.jpg" alt="나소마토 실버 머스크 엑스트레 퍼퓸 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title=" 나소마토 실버 머스크 엑스트레 퍼퓸 보러가기">
+                            <h3>나소마토 실버 머스크 
+                                <br>엑스트레 퍼퓸</h3>
+                        </a>
+                        <p>하얀 눈의 결정체가 손바닥 위에서 녹는 듯, 극도로 투명한 목화꽃의 깨끗함</p>
+                        <p>245,500원</p>
+                        <span class="btn02">해외</span>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="img_box img04">
+                            <a href="#" title="에르메스 운 자르뎅 수르 라 라군 오 드 뚜왈렛 보러가기">
+                        <img src="./images/b_forher04.jpg" alt="에르메스 운 자르뎅 수르 라 라군 오 드 뚜왈렛">
+                        <img src="./images/b_forher04_next.jpg" alt="에르메스 운 자르뎅 수르 라 라군 오 드 뚜왈렛 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="에르메스 운 자르뎅 수르 라 라군 오 드 뚜왈렛 보러가기">
+                            <h3>에르메스 운 자르뎅 수르 라 
+                                <br>라군 오 드 뚜왈렛</h3>
+                        </a>
+                        <p>따뜻한 돌담길 너머에 아늑하게 핀 백합과 나무 그리고 정원</p>
+                        <p>67,000원</p>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="best_box forhim">
+                <ul>
+                    <li>
+                        <div class="img_box img01">
+                            <a href="#" title="키에린 뉴욕 샹탈 스카이 오 드 퍼퓸 스프레이 보러가기">
+                        <img src="./images/b_forhim01.jpg" alt="키에린 뉴욕 샹탈 스카이 오 드 퍼퓸 스프레이">
+                        <img src="./images/b_forhim01_next.jpg" alt="키에린 뉴욕 샹탈 스카이 오 드 퍼퓸 스프레이 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="키에린 뉴욕 샹탈 스카이 오 드 퍼퓸 스프레이 보러가기">
+                            <h3>키에린 뉴욕 샹탈 스카이 오 드 퍼퓸 스프레이</h3>
+                        </a>
+                        <p>샌달우드와 베티버가 선사하는, 자유로운 뉴요커의 하루 한 조각</p>
+                        <p>54,000원</p>
+                        <span class="btn02">해외</span>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="img_box img02">
+                            <a href="#" title="스테파니 브루진 마이 젠틀맨 오 드 퍼퓸 보러가기">
+                        <img src="./images/b_forhim02.jpg" alt="스테파니 브루진 마이 젠틀맨 오 드 퍼퓸">
+                        <img src="./images/b_forhim02_next.jpg" alt="스테파니 브루진 마이 젠틀맨 오 드 퍼퓸 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="스테파니 브루진 마이 젠틀맨 오 드 퍼퓸 보러가기">
+                            <h3>스테파니 브루진 마이 젠틀맨 오 드 퍼퓸</h3>
+                        </a>
+                        <p>철보다 단단한 심장을 가진 남자의 
+                            <br>아로마틱 - 푸제르 계열 스킨내음</p>
+                        <p>225,000원
+                        </p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="img_box img03">
+                            <a href="#" title="메종마르지엘라 바이 더 파이어플레이스 보러가기">
+                        <img src="./images/b_forhim03.jpg" alt="메종마르지엘라 바이 더 파이어플레이스">
+                        <img src="./images/b_forhim03_next.jpg" alt="메종마르지엘라 바이 더 파이어플레이스 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="메종마르지엘라 바이 더 파이어플레이스 보러가기">
+                            <h3>메종마르지엘라 바이 더 
+                                <br>파이어플레이스</h3>
+                        </a>
+                        <p>스위스 나무 별장, 모닥불 피워 놓은 
+                            <br>자리에서 한 입 떠 먹는 바닐라 한 스푼</p>
+                        <p>87,800원</p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="img_box img04">
+                            <a href="#" title="샤넬 블루 드 샤넬 오 드 퍼퓸 보러가기">
+                        <img src="./images/b_forhim04.jpg" alt="샤넬 블루 드 샤넬 오 드 퍼퓸">
+                        <img src="./images/b_forhim04_next.jpg" alt="샤넬 블루 드 샤넬 오 드 퍼퓸 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="샤넬 블루 드 샤넬 오 드 퍼퓸 보러가기">
+                            <h3>샤넬 블루 드 샤넬 오 드 퍼퓸</h3>
+                        </a>
+                        <p>짙은 네이비 슈트가 생각나는 남성의 향기</p>
+                        <p>117,500원</p>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="best_box body">
+                <ul>
+                    <li>
+                        <div class="img_box img01">
+                            <a href="#" title="프로소디 런던 르네상스 디퓨저 3종 시리즈 보러가기">
+                        <img src="./images/b_dody01.jpg" alt="프로소디 런던 르네상스 디퓨저 3종 시리즈" class="front">
+                        <img src="./images/b_dody01_next.jpg" alt="프로소디 런던 르네상스 디퓨저 3종 시리즈 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="프로소디 런던 르네상스 디퓨저 3종 시리즈 보러가기">
+                            <h3>프로소디 런던 르네상스 디퓨저 3종 시리즈</h3>
+                        </a>
+                        <p>자연 유래 성분이 내 방 안에 선사하는 진짜 자연의 향기, 프로소디 르네상스 디퓨저 컬렉션</p>
+                        <p>68,000원</p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="img_box img02">
+                            <a href="#" title="SWG컬렉션 샤워젤 3종 보러가기">
+                        <img src="./images/b_dody02.jpg" alt="SWG컬렉션 샤워젤 3종">
+                        <img src="./images/b_dody02_next.jpg" alt="SWG컬렉션 샤워젤 3종 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="SWG컬렉션 샤워젤 3종 보러가기">
+                            <h3>SWG컬렉션 샤워젤 3종</h3>
+                        </a>
+                        <p>퍼퓸그라피 직원이 직접 사용해보고 추천하는, 도시적인 낭만을 담은 샤워젤 3종</p>
+                        <p>25,200원</p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="img_box img03">
+                            <a href="#" title="로이비 프래그런스 디퓨저 앤 스틱 6종 보러가기">
+                        <img src="./images/b_dody03.jpg" alt="로이비 프래그런스 디퓨저 앤 스틱 6종">
+                        <img src="./images/b_dody03_next.jpg" alt="로이비 프래그런스 디퓨저 앤 스틱 6종 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="로이비 프래그런스 디퓨저 앤 스틱 6종 보러가기">
+                            <h3>로이비 프래그런스 디퓨저 앤 스틱 6종</h3>
+                        </a>
+                        <p>공간에 자연스러운 인테리어로 녹아드는, 로이비만의 감각적인 향테리어 6종 디퓨저</p>
+                        <p>71,100원</p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="img_box img04">
+                            <a href="#" title="누NOU 데오드란트 3종 시리즈 보러가기">
+                        <img src="./images/b_dody04.jpg" alt="누NOU 데오드란트 3종 시리즈">
+                        <img src="./images/b_dody04_next.jpg" alt="누NOU 데오드란트 3종 시리즈 다음" class="back">
+                    </a>
+                    </div>
+                    <div class="txt_box">
+                        <a href="#" title="누NOU 데오드란트 3종 시리즈 보러가기">
+                            <h3>누NOU 데오드란트 3종 시리즈</h3>
+                        </a>
+                        <p>쾌활한 남자의 여름 필수품, 누 데오드란트</p>
+                        <p>18,000원</p>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+
+        <!-- 브랜드 스토리 -->
+        <section class="brand_story scroll-spy">
+            <div class="box back-to-position">
+            <div class="inner">
+                <h3 class="back-to-position to-right delay-1">'나의 향수는<br>
+                    나의 일부가 되고<br> 
+                    아무도 그것을 모방할 수 없다’</h3>
+                <p class="back-to-position to-right delay-2">전 세계 수만 개의 향수 중 당신의 향수를 <br>
+                    찾는 것은 운명과도 같습니다.</p>
+                <p class="back-to-position to-right delay-2">당신의 일부가 되는 최적의 향수를 찾는 일,
+                    <br>그것이 퍼퓸그라피가 존재하는 이유입니다.</p>
+                  <div class="back-to-position to-right delay-2">
+                <a href="brand.html" title="브랜드스토리로 바로가기" class="btn">Brand Story 보러가기</a>
+            </div>
+        </div>
+            </div>
+        </section>
+
+        <!-- 스토어 -->
+        <section class="store scroll-spy">
+            <div class="inner">
+                <a href="#" title="매장안내 바로가기">
+                <img src="./images/store01.jpg" alt="매장 안쪽 사진" class="back-to-position delay-3 to-left">
+                <img src="./images/store02.jpg" alt="매장 바깥 사진" class="back-to-position">
+            </a>
+                <div class="txt_box back-to-position delay-1 to-left">
+                    <p>OFFLINE STORE</p>
+                    <h3>PERFUMEGRAPHY</h3>
+                    <p class="back-to-position delay-2">퍼퓸그라피의 오프라인 매장에 방문하여<br>
+                        직접 시향하고 자신의 취향에 맞는<br>
+                        나만의 향수를 찾아보세요.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 뉴스 -->
+        <section class="news">
+            <div class="inner">
+                <article class="grid_wrap">
+            <div class="item">
+                <a href="#" title="홈리딩">
+                    <img src="./images/news01.jpg" alt="홈리딩">
+                </a>
+            </div>
+            <div class="item">
+                <a href="sench.html" title="센츠하다">
+                    <img src="./images/news02.jpg" alt="센츠하다">
+                </a>
+            </div>
+            <div class="item">
+                <img src="./images/news03_top.png" alt="영업시간">
+            </div>
+            <div class="item">
+                <img src="./images/news03_bottom.jpg" alt="배달">
+            </div>
+        </article>
+        </div>
+        </section>
+    </main>
+
+    <!-- 푸터영역 -->
+    <footer>
+        <div class="inner">
+        <nav class="f_lnb">
+            <ul>
+                <li><a href="index.html" title="홈">홈</a></li>
+                <li><a href="#" title="회사소개">회사소개</a></li>
+                <li><a href="#" title="이용약관">이용약관</a></li>
+                <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+                <li><a href="#" title="이용안내">이용안내</a></li>
+                <li>
+                    <select name="패밀리사이트" id="family_site" onChange="siteUrl(this.value)">
+                        <option>Family Site</option>
+                        <option value="#">family site01</option>
+                        <option value="#">family site02</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        <ul class="txt01">
+            <li>
+                <h3>문의 및 안내
+                    <br>070-7424-1253
+                </h3>
+                <p>평일 11:00 ~ 16:00 / 점심시간 13:00 ~ 14:00
+                    <br>(주말, 공휴일 휴무)</p>
+            </li>
+            <li>
+                <h3>오프라인 문의 및 안내
+                    <br>070-4166-9121
+                </h3>
+                <p>오프라인 : 화-일요일 12:00 ~ 20:30</p>
+            </li>
+            <li>
+                <h3>입금계좌정보
+                    <br>기업 078-200428-01-013
+                </h3>
+                <p>예금주 : (주)퍼퓸그라피</p>
+            </li>
+        </ul>
+        <h3 class="logo">
+            <a href="index.html" title="메인페이지로 바로가기">
+                <img src="./images/logo.svg" alt="푸터로고">
+            </a>
+        </h3>
+        <div class="sns_box">
+        <a href="#" title="인스타그램로 바로가기">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" title="네이버로 바로가기">
+            <img src="./images/naver_icon02.png" alt="네이버아이콘">
+        </a>
+        <a href="#" title="페이스북 바로가기">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+    </div>
+        <address>상호명주식회사 퍼퓸그라피 대표자홍윤표 사업자등록번호651-88-00183 통신판매업신고번호제 2019-서울종로-0106 호 [사업자정보확인] 고객센터070-7424-1253 주소03086 서울특별시 종로구 대학로10길 15-15 (동숭동) 해안빌딩 2층 퍼퓸그라피 개인정보보호책임자 이희진(cs@perfumegraphy.com) 
+            <br>※ 퍼퓸그라피에서 제공하는 모든 컨텐츠는 저작권법에 보호받는 저작물로서, 무단으로 복제, 배포하는 경우에는 저작권법에 의하여 처벌을 받을 수 있습니다.
+            <br><br><br>
+            Copyright © 2021 퍼퓸그라피. All rights reserved.</address>
+        </div>
+    </footer>
+
+    <!-- 스와이퍼 스크립트 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".proSlide", {//객체 생성
+        slidesPerView: 5,//속성:값
+        spaceBetween: 10,//속성:값
+        centeredSlides:true,//1번 슬라이드가 중앙에 배치
+        loop: true,//반복회전
+        pagination: {
+          el: ".swiper-pagination",//컨트롤버튼 나오게
+          clickable: true,//컨트롤 버튼 클릭할 수 있음
+        },
+        autoplay:true,//자동으로 움직임
+        navigation: {//좌, 우 버튼 만들기
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>

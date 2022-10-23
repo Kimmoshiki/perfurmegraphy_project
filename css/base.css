@@ -1,0 +1,253 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Noto+Serif+KR:wght@200;300;400;500&display=swap');
+
+/* body{font-family: 'Noto Serif KR', serif;} */
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+a{
+    color:#333;
+    text-decoration:none;
+}
+header{
+    width:100%;
+    height:100px;
+    background:rgba(0,0,0,.3);
+    font-family:'Noto Serif KR', serif;
+    z-index:2;
+    position:absolute;
+    
+}
+.h_inner{
+    width:1100px;
+    margin:0px auto;
+    position:relative;
+}
+.h_inner h1{
+    width:150px;
+    padding:10px;
+}
+/* 상단 내비게이션 */
+.h_inner_top i{
+    padding:4px 25px;
+    color:#fff;
+    cursor:pointer;
+}
+.h_inner_top i,.h_inner_top span{
+    font-size:20px;
+    width:20px;
+}
+.h_inner_top .t_lnb{
+    position:absolute;
+    top:10px;
+    right:0px;
+}
+.h_inner_top .lnb .t_lnb{
+    display:flex;
+}
+.h_inner_top .lnb .sub{
+    background:#fff;
+    width:70px;
+    border-radius:8px;
+    display:none;
+    padding:5px 0px;
+}
+.h_inner_top .lnb .sub li{
+    padding:2px 0px;
+    text-align:center;
+}
+.h_inner_top .lnb .sub a{
+    font-size:12px;
+}
+
+/* 검색창 */
+.h_inner_top #search{
+    width:30px;
+    line-height:28px;
+    border:none;
+    border-radius:10px;
+    opacity:0;
+    
+}
+.h_inner_top .search{
+    position:absolute;
+    right:160px;
+    top:10px;
+}
+.h_inner_top .search label span.fa-search{
+    position:absolute;
+    top:4px;right:3px;
+    color:#A1749A;
+}
+
+/* 메인 네비게이션 */
+.gnb{
+    position:absolute;
+    left:100px;
+    top:50px;
+    text-transform:uppercase;
+}
+.gnb > ul{
+    display:flex;
+    justify-content:space-around;
+}
+.gnb>ul>li{
+    text-align:center;
+    width:180px;
+}
+.gnb>ul>li:last-child>a:hover{
+    background:none;
+    color:#CC8481;
+}
+.gnb > ul > li:hover .item_content{display:block;}
+.gnb > ul > li >a{
+    display:block;
+    text-align:center;
+    font-size:16px;
+    color:#fff;
+    line-height:50px;
+    font-weight:100;
+}
+.gnb > ul > li >a:hover{
+    background:rgba(255,255,255,.8);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    color:#665349;
+}
+.gnb .sub{
+    padding:15px 0px;
+}
+
+
+/* 서브메뉴 */
+.item_content{
+    width:100%;
+    background:rgba(255,255,255,.8);
+    position:fixed;
+    left:0px;
+    top:100px;
+    display:none;
+}
+.nav_wrap{
+    width:1100px;
+    margin:0px auto;
+    position:relative;
+    left:60px;
+    display:flex;
+}
+
+.sub dt, .sub dd{
+    width:200px;
+    padding:5px 0px;
+}
+.sub dt a{
+    padding:3px 0px 10px 0px;
+    font-size:14px;
+    color:#A1749A;
+    font-weight:300;
+}
+.sub dt a::after{
+    display:block;
+    content:"";
+    height:4px;
+    background-color:#CC8481;
+    transform:translateY(2px) scale(0);
+    transition:0.5s;
+}
+.sub dt a:hover::after{transform:translateY(2px)scale(0.5);}
+.sub dd a{
+    padding:5px 0px;
+    font-size:12px;
+    color:#000;
+    cursor:pointer;
+    line-height:160%;
+}
+.sub dd a:hover{
+    color:#CC8481;
+}
+.none dd{display:none;}
+
+/* 푸터영역 */
+footer{
+    background:#333;
+    color:#fff;
+}
+footer .f_lnb ul{
+    padding:30px 0px;
+    display:flex;
+    justify-content: space-around;
+}
+footer .f_lnb ul li:nth-child(4) a{color:#A1749A;}
+footer .f_lnb ul li a{
+    color:#fff;
+}
+footer .f_lnb ul li::after{
+    content:"|";
+    padding-left:60px;
+}
+footer .f_lnb ul li:last-child::after,footer .f_lnb ul li:nth-child(5)::after{display:none;}
+footer #family_site{
+    font-size:18px;
+    border:none;
+    border-bottom:1px solid #fff;
+    padding-bottom:3px;
+    transform:translateY(-5px);
+    background:none;
+    color:#fff;
+    font-family: 'Noto Serif KR', serif;
+}
+footer #family_site option{
+    color:#333;
+}
+footer .inner .txt01{
+    display:flex;
+    justify-content: space-between;
+    width:800px;
+    margin-top:6px;
+}
+footer .inner .txt01 li{
+    text-align:center;
+    padding-right:30px;
+    border-right:1px solid #fff;
+}
+footer .inner .txt01 li:last-child{
+    border:none;
+}
+footer .inner .txt01  h3{
+    font-family: 'Noto Serif KR', serif;
+    line-height: 140%;
+}
+footer .inner .txt01 p{
+    font-size:14px;
+    margin-top:20px;
+    line-height:140%;
+}
+footer .inner .logo{
+    transform: translate(-50px,-120px);
+}
+footer .inner .logo img{
+    width:220px;
+    float: right;
+}
+footer .fa-brands{
+    font-size:60px;
+    color:#fff;
+}
+footer .inner a img{width:50px;}
+footer .inner .sns_box{
+    position:absolute;
+    top:140px; right:50px;
+}
+footer .inner .sns_box a{
+    margin-right:15px;
+}
+footer address{
+    font-style:normal;
+    font-size:12px;
+    width:900px;
+    text-align: center;
+    margin:0px auto;
+    padding:10px 0px;
+    line-height:150%;
+    clear:both;
+    transform: translateY(-20px);
+}
