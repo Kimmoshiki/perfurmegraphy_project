@@ -150,6 +150,7 @@ $(function(){
         $('.best .best_box').removeClass('on');
         $('.best .b_body').addClass('on_btn');
         $('.best .body').addClass('on');
+
     });
     
 });
@@ -171,4 +172,12 @@ $(function(){
         }
     }
 
+    // 탑버튼
+    const topBtnEl = document.querySelector('.top_btn');
+
+    topBtnEl.addEventListener('click',function(){
+    gsap.to(window,.6,{//브라우저를 선택하여 0.6초만에
+        scrollTo:0 //스크롤 꼭때기 0까지 올라간다.
+    });
+})
 
