@@ -251,3 +251,21 @@ footer address{
     clear:both;
     transform: translateY(-20px);
 }
+footer .top_btn{
+    position:fixed;
+    bottom:50px;
+    right:40px;
+    font-size:30px;
+    background:#A1749A;
+    width:50px;
+    line-height:50px;
+    text-align:center;
+    border:1px solid #A1749A;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px #333;
+    transition:0.6s;    
+}
+footer .top_btn:hover{
+    background:#fff;
+    color:#A1749A;
+}
