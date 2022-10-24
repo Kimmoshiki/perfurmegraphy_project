@@ -28,22 +28,21 @@ $(function(){
     // 검색창
     $('.fa-search').click(function(){
         if(n==0){
-            $('header .h_inner_top #search').css('opacity','1').animate({'width':'175px'},700);
+            $('header .h_inner_top #search').fadeIn().css('opacity','1').animate({'width':'175px'},700);
             // $(this).hide(600);
             n=1;
             console.log(n);
         }else{
-            $('header .h_inner_top #search').fadeOut();
-            $('.fa-search').show();
+            $('header .h_inner_top #search').fadeOut().css('opacity','0').animate({'width':'30px'},700);
             n=0;
             console.log(n);
         }
     });
-    $('header .h_inner_top #search').focusout(function(){
-        // alert('222');
-        $('header .h_inner_top #search');
-        $('.fa-search').show();
-    });
+    // $('header .h_inner_top #search').focusout(function(){
+    //     // alert('222');
+    //     $('header .h_inner_top #search');
+    //     $('.fa-search').show();
+    // });
 
     // 비주얼 슬라이드
     let txt_box = $('.v_slide .txt_box');
@@ -160,7 +159,7 @@ $(function(){
         new ScrollMagic
         .Scene({//감시할 장면을 추가
           triggerElement:spyEl,
-          triggerHook:0.75 //화면의 80% 지점에서 동작
+          triggerHook:0.9 //화면의 70% 지점에서 동작
         })
         .setClassToggle(spyEl, 'show')//show클래스를 적용하거나 해체하기
         .addTo(new ScrollMagic.Controller());//컨트롤러에 장면에 할당한다.

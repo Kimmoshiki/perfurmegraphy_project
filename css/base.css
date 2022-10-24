@@ -229,16 +229,16 @@ footer .inner .logo img{
     float: right;
 }
 footer .fa-brands{
-    font-size:60px;
+    font-size:40px;
     color:#fff;
 }
-footer .inner a img{width:50px;}
+footer .inner a img{width:30px;}
 footer .inner .sns_box{
     position:absolute;
-    top:140px; right:50px;
+    top:150px; right:60px;
 }
 footer .inner .sns_box a{
-    margin-right:15px;
+    margin-right:20px;
 }
 footer address{
     font-style:normal;
