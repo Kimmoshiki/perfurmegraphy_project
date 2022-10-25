@@ -650,6 +650,7 @@ main{padding-top:660px;overflow:hidden;}
     background: rgb(163,154,139);
     background: linear-gradient(180deg, rgba(163,154,139,1) 73%, rgba(255,255,255,1) 73%);
 }
+.news > h3, .news .grid_wrap{display:none;}
 .news .inner .grid_wrap{
     width:1100px;
     height:340px;
