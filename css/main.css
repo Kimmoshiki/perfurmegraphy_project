@@ -308,6 +308,7 @@ main{padding-top:660px;overflow:hidden;}
     width:100%;
     background:#fff;
 }
+.product article>h3{display:none;}
 .product  .on{display:block;}
 .product > h3, .p_new,.p_best,.p_brand,.p_sench{display:none;}
 .product .p_bg{
@@ -419,6 +420,7 @@ main{padding-top:660px;overflow:hidden;}
     width:100%;
     height:370px;
 }
+.quretion >h3{display:none;}
 .quretion .inner img{
     width:500px;
     position:absolute;
