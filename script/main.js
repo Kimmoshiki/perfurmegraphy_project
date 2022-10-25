@@ -32,10 +32,12 @@ $(function(){
             // $(this).hide(600);
             n=1;
             console.log(n);
+            $(this).css('color','#A1749A');
         }else{
             $('header .h_inner_top #search').fadeOut().css('opacity','0').animate({'width':'30px'},700);
             n=0;
             console.log(n);
+            $(this).css('color','#ffffff');
         }
     });
     // $('header .h_inner_top #search').focusout(function(){

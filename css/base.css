@@ -76,7 +76,7 @@ header{
 .h_inner_top .search label span.fa-search{
     position:absolute;
     top:4px;right:3px;
-    color:#A1749A;
+    color:#fff;
 }
 
 /* 메인 네비게이션 */
@@ -231,7 +231,7 @@ footer .inner .logo img{
     float: right;
 }
 footer .fa-brands{
-    font-size:40px;
+    font-size:30px;
     color:#fff;
 }
 footer .inner a img{width:30px;}
