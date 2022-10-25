@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <!-- 폰트 어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- 리셋 -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <!-- 베이스 -->
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <!-- 메인 -->
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <!-- 로그인 서식 -->
+    <link href="./css/login.css" rel="stylesheet" type=text/css>
+
+    <!-- 벤더프리픽스 -->
+    <script src="./script/prefixfree.min.js"></script>
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 부드러운 애니메이션 스크립트 소스 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <!-- 스크롤 탑버튼 애니메이션 스크립트 소스 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+    <!-- 메인 스크립트 -->
+    <script src="./script/main.js" defer></script>
+</head>
+<body>
+        <!-- 헤더영역 -->
+        <header>
+            <div class="h_inner">
+            <h1><a href="index.html">
+                <img src="./images/logo.svg" alt="상단로고">
+            </a></h1>
+            <div class="h_inner_top">
+                <nav class="lnb">
+                    <div class="search">
+                        <input type="search" placeholder="검색어를 입력해주세요." id="search">
+                        <label for="search">
+                            <span class="fas fa-search"></span>
+                        </label>
+                    </div>
+                    <ul class="t_lnb">
+                        <li>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <ul class="sub">
+                                <li><a href="#" title="장바구니">장바구니</a></li>
+                                <li><a href="#" title="주문조회">주문조회</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i class="fas fa-user"></i>
+                            <ul class="sub">
+                                <li><a href="login.html" title="로그인">로그인</a></li>
+                                <li><a href="#" title="회원가입">회원가입</a></li>
+                                <li><a href="#" title="마이페이지">마이페이지</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="brand_story.html" title="브랜드 스토리로 바로가기">perfumegraphy</a>
+                            <div class="item_content">
+                                <div class="nav_wrap">
+                        <dl class="sub none">
+                            <dt><a href="brand_story.html" title="브랜드스토리">brand story</a></dt>
+                            <dd>&nbsp;</dd></dl>
+                            <dl class="sub none">
+                            <dt><a href="#" title="회사소개">회사소개</a></dt>
+                            <dd>&nbsp;</dd></dl>
+                            <dl class="sub none">
+                            <dt><a href="#" title="오시는길">오시는길</a></dt>
+                            <dd>&nbsp;</dd></dl>
+                        
+                    </div>
+                    </li>
+                    <li><a href="unisex.html" title="프로덕트">product</a>
+                        <div class="item_content">
+                            <div class="nav_wrap">
+                            <dl class="sub">
+                                <dt><a href="unisex.html" title="unisex">unisex</a></dt>
+                                <dd><a href="unisex.html" title="all">all</a></dd>
+                                <dd><a href="unisex_strus.html" title="시트러스">시트러스 &#x007C; 그린</a></dd>
+                                <dd><a href="unisex_wudy.html" title="우디">우디 &#x007C; 베티버</a></dd>
+                                <dd><a href="unisex_.html" title="샌달우드">샌달우드 &#x007C; 머스크</a></dd>
+                                <dd><a href="unisex_.html" title="스파이시">스파이시 &#x007C; 통카빈</a></dd>
+                            </dl>
+                            <dl class="sub">
+                                <dt><a href="forher.html" title="">for her</a></dt>
+                                <dd><a href="forher.html" title="">all</a></dd>
+                                <dd><a href="forher_strus.html" title="">시트러스 &#x007C; 그린</a></dd>
+                                <dd><a href="forher_flower.html" title="">플로럴 &#x007C; 화이트 플로럴</a></dd>
+                                <dd><a href="forher_musk.html" title="">머스크 &#x007C; 엠버</a></dd>
+                                <dd><a href="forher_swet.html" title="">스위트 &#x007C; 바닐라</a></dd>
+                            </dl>
+                            <dl class="sub">
+                                <dt><a href="#" title="for him">for him</a></dt>
+                                <dd><a href="#" title="all">all</a></dd>
+                                <dd><a href="#" title="시트러스/그린">시트러스 &#x007C; 그린</a></dd>
+                                <dd><a href="#" title="우디/베티버">우디 &#x007C; 베티버</a></dd>
+                                <dd><a href="#" title="윕스파이시/통키번">윕스파이시 &#x007C; 통키번</a></dd>
+                                <dd><a href="#" title="라벤더/워터리">라벤더 &#x007C; 워터리</a></dd>
+                            </dl>
+                            <dl class="sub">
+                                <dt><a href="#" title="바디/디퓨저">바디&#x0026;디퓨저</a></dt>
+                                <dd><a href="#" title="핸드/바디/솝">핸드&#x0026;바디&#x0026;솝</a></dd>
+                                <dd><a href="#" title="디퓨저/캔들">디퓨저&#x0026;캔들</a></dd>
+                            </dl>
+                            <dl class="sub">
+                                <dt><a href="#" title="브랜드별">브랜드별</a></dt>
+                            </dl>
+                        </div>
+                            </div>
+                    </li>
+                    <li><a href="event.html">event</a>
+                        <div class="item_content">
+                            <div class="nav_wrap">
+                       <dl class="sub">
+                        <dt><a href="#" title="10월 신상">10월 신상</a></dt>
+                       </dl>
+                       <dl class="sub">
+                        <dt><a href="#" title="큐레이션">큐레이션</a></dt>
+                        <dd><a href="#" title="7월향수">7월 - 청량한 향수</a></dd>
+                        <dd><a href="#" title="8월향수">8월 - 정원의 향수</a></dd>
+                       </dl>
+                       <dl class="sub">
+                        <dt><a href="#" title="best 50">best 50</a></dt>
+                        <dd><a href="#" title="세르주루텐">세르주루텐</a></dd>
+                        <dd><a href="#" title="아쿠아 디 파르마">아쿠아 디 파르마</a></dd>
+                       </dl>
+                       </div>
+                       </div>
+                    </li>
+                    <li><a href="community.html" title="community">community</a>
+                        <div class="item_content">
+                            <div class="nav_wrap">
+                        <dl class="sub none">
+                            <dt><a href="#" title="Q&#x0026;A">Q&#x0026;A</a></dt>
+                            <dd>&nbsp;</dd></dl>
+                            <dl class="sub none">
+                            <dt><a href="#" title="향수추천문의">향수추천문의</a></dt>
+                            <dd>&nbsp;</dd></dl>
+                            <dl class="sub none">
+                            <dt><a href="#" title="고객리뷰">고객리뷰</a></dt>
+                            <dd>&nbsp;</dd></dl>
+                        
+                        </div>
+                        </div>
+                    </li>
+                    <li><a href="#" title="센츠하다">센츠하다</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </header>
+
+        <!-- 메인영역 -->
+        <main>
+            <div class=inner>
+                <div class="box">
+            <fieldset>
+                <legend>로그인</legend>
+                <input type="text" id="id_txt" placeholder="아이디를 입력하세요.">
+               <input type="password" id="pw_txt" placeholder="패스워드를 입력하세요.">
+                <input type="button" value="로그인" class="login">
+                <input type="button" value="회원가입" class="join">
+            </fieldset>
+            <ul>
+                <li><a href="#" title="아이디 찾기">아이디 찾기</a></li>
+                <li><a href="#" title="비밀번호 찾기">비밀번호 찾기</a></li>
+                <li><label for="check">보안접속</label><input type="checkbox" id="check"></li>
+            </ul>
+            <div class="sns_login">
+                <a href="#" title="카카오 간펀로그인" class="btn03 kakao"><img src="images/kakao_icon.png" alt="카카오 아이콘"> 카카오 간편로그인 </a>
+                <a href="#" title="네이버 간편 로그인" class="btn03 naver"><img src="./images/naver_icon02.png" alt="네이버 이이콘"> 네이버 간편로그인</a>
+                <a href="#" title="비회원 로그인" class="n_btn">비회원 로그인</a>
+            </div>
+            </div>
+        </div>
+        </main>
+
+        <!-- 푸터영역 -->
+    <footer>
+        <span class="fas fa-angle-up top_btn"></span>
+        <div class="inner">
+        <nav class="f_lnb">
+            <ul>
+                <li><a href="index.html" title="홈">홈</a></li>
+                <li><a href="#" title="회사소개">회사소개</a></li>
+                <li><a href="#" title="이용약관">이용약관</a></li>
+                <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+                <li><a href="#" title="이용안내">이용안내</a></li>
+                <li>
+                    <select name="패밀리사이트" id="family_site" onChange="siteUrl(this.value)">
+                        <option>Family Site</option>
+                        <option value="#">family site01</option>
+                        <option value="#">family site02</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        <ul class="txt01">
+            <li>
+                <h3>문의 및 안내
+                    <br>070-7424-1253
+                </h3>
+                <p>평일 11:00 ~ 16:00 / 점심시간 13:00 ~ 14:00
+                    <br>(주말, 공휴일 휴무)</p>
+            </li>
+            <li>
+                <h3>오프라인 문의 및 안내
+                    <br>070-4166-9121
+                </h3>
+                <p>오프라인 : 화-일요일 12:00 ~ 20:30</p>
+            </li>
+            <li>
+                <h3>입금계좌정보
+                    <br>기업 078-200428-01-013
+                </h3>
+                <p>예금주 : (주)퍼퓸그라피</p>
+            </li>
+        </ul>
+        <h3 class="logo">
+            <a href="index.html" title="메인페이지로 바로가기">
+                <img src="./images/logo.svg" alt="푸터로고">
+            </a>
+        </h3>
+        <div class="sns_box">
+        <a href="#" title="인스타그램로 바로가기">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" title="네이버로 바로가기">
+            <img src="./images/naver_icon02.png" alt="네이버아이콘">
+        </a>
+        <a href="#" title="페이스북 바로가기">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+    </div>
+        <address>상호명주식회사 퍼퓸그라피 대표자홍윤표 사업자등록번호651-88-00183 통신판매업신고번호제 2019-서울종로-0106 호 [사업자정보확인] 고객센터070-7424-1253 주소03086 서울특별시 종로구 대학로10길 15-15 (동숭동) 해안빌딩 2층 퍼퓸그라피 개인정보보호책임자 이희진(cs@perfumegraphy.com) 
+            <br>※ 퍼퓸그라피에서 제공하는 모든 컨텐츠는 저작권법에 보호받는 저작물로서, 무단으로 복제, 배포하는 경우에는 저작권법에 의하여 처벌을 받을 수 있습니다.
+            <br><br><br>
+            Copyright © 2021 퍼퓸그라피. All rights reserved.</address>
+        </div>
+    </footer>
+</body>
+</html>

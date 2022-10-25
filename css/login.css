@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+main{padding-top:140px !important;}
+
+main > .inner .box{
+    width:800px;
+    height:780px;
+    margin:0px auto;
+}
+main >.inner fieldset{
+    width:800px;
+    height:390px;
+    text-align: center;
+    margin-top:80px;
+}
+fieldset legend{
+    font-size:26px;
+    margin-bottom:50px;
+    font-family: 'Noto Serif KR', serif;
+}
+fieldset #id_txt,fieldset #pw_txt{
+    width:400px;
+    line-height:50px;
+    margin-bottom:16px;
+}
+fieldset .login,fieldset .join{
+    width:410px;
+    height:60px;
+    margin-bottom:16px;
+    font-size:18px;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+fieldset .login{
+    margin-top:25px;
+    background:#665349;
+}
+fieldset .join{
+    background:#AEA699;
+}
+main ul{
+    display:flex;
+    justify-content: right;
+    border-bottom:1px solid #665349;
+    padding:0px 200px 25px 0px;
+}
+main ul li{
+    margin-left:10px;
+    font-size:14px;
+}
+main ul li:first-child::after{
+    content:"|";
+    margin-left:10px;
+}
+main ul li label{
+    color:#A1749A;
+}
+.kakao img,.naver img{
+    width:32px;
+    transform: translateY(8px);
+}
+.kakao, .naver{
+    margin-bottom:16px;
+    color:#333;
+}
+.kakao{
+    background:#F2DC01;
+}
+.naver{
+    background:#19CE60;
+}
+.btn03{
+    width:200px;
+    padding:5px 0px 18px 0px;
+}
+.sns_login{
+    width:800px;
+    margin:0px auto;
+    text-align:center;
+    padding:30px 0px;
+}
+.sns_login a{
+    border-radius:12px;
+    display:inline-block;
+}
+.sns_login .n_btn{
+    width:400px;
+    line-height:60px;
+    background:#665349;
+    font-size:16px;
+    color:#fff;
+}

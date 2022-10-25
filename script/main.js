@@ -180,3 +180,20 @@ $(function(){
     });
 })
 
+window.addEventListener('scroll',function(){
+    console.log(window.scrollY);//스크롤값 확인하기
+    if(400<window.scrollY){
+        gsap.to(topBtnEl, 0.6, {
+            opacity:1,
+            
+        });
+    }else{
+        gsap.to(topBtnEl, 0.6, {
+            opacity:0,
+            
+        });
+        
+    }
+});
+
+

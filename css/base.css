@@ -172,13 +172,14 @@ footer{
     color:#fff;
 }
 footer .f_lnb ul{
-    padding:30px 0px;
+    padding:25px 0px;
     display:flex;
     justify-content: space-around;
 }
 footer .f_lnb ul li:nth-child(4) a{color:#A1749A;}
 footer .f_lnb ul li a{
     color:#fff;
+    font-size:15px;
 }
 footer .f_lnb ul li::after{
     content:"|";
@@ -215,9 +216,10 @@ footer .inner .txt01 li:last-child{
 footer .inner .txt01  h3{
     font-family: 'Noto Serif KR', serif;
     line-height: 140%;
+    font-size:14px;
 }
 footer .inner .txt01 p{
-    font-size:14px;
+    font-size:13px;
     margin-top:20px;
     line-height:140%;
 }
@@ -269,4 +271,10 @@ footer .top_btn{
 footer .top_btn:hover{
     background:#fff;
     color:#A1749A;
+    animation:t_btn infinite 4s;
+}
+@keyframes t_btn{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-20px);}
+    100%{transform:translateY(0px);}
 }
