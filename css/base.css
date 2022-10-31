@@ -233,11 +233,12 @@ footer .inner .logo img{
 footer .fa-brands{
     font-size:30px;
     color:#fff;
+    transform: translateY(-1px);
 }
-footer .inner a img{width:30px;}
+footer .inner a img{width:25px;}
 footer .inner .sns_box{
     position:absolute;
-    top:150px; right:60px;
+    top:145px; right:70px;
 }
 footer .inner .sns_box a{
     margin-right:20px;
