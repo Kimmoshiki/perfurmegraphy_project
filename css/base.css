@@ -267,6 +267,7 @@ footer .top_btn{
     box-shadow: 2px 2px 6px #333;
     transition:0.6s;    
     z-index: 100;
+    opacity: 0;
 }
 footer .top_btn:hover{
     background:#fff;
