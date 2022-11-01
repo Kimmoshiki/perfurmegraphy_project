@@ -196,7 +196,7 @@ main{padding-top:660px;overflow:hidden;}
 .proSlide .swiper-slide .num{
     font-size:16px;
     font-weight:200;
-    margin-top:10px;
+    margin-top:8px;
 }
 .proSlide .swiper-slide > p, .proSlide .swiper-slide > h3{
     color:#fff;
@@ -215,6 +215,9 @@ main{padding-top:660px;overflow:hidden;}
 .proSlide .swiper-slide-active > p, .proSlide .swiper-slide-active > h3,.proSlide .swiper-slide-active .btn,.proSlide .swiper-slide-active{
     opacity:1;
     transform:scale(1);
+}
+.proSlide .swiper-pagination{
+    bottom:4px !important;
 }
 /* 방향 버튼 서식 */
 .proSlide .swiper-button-prev, .proSlide .swiper-button-next{
@@ -242,11 +245,13 @@ main{padding-top:660px;overflow:hidden;}
 .proSlide .swiper-pagination-bullet{
     width:14px;height:14px;
     margin-top:10px;
-    background:#333;
+    background:#000;
+    opacity: 0.5;
 }
 .proSlide .swiper-pagination-bullet-active{
     background:#fff;
 }
+
 
 /* 향수추천 */
 .perfume{
